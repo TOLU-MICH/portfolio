@@ -2,6 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-.u {
-  word-spacing: normal;
+.bg {
+  background-image: url("./assets//images/bg.svg");
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+h2 {
+  @apply text-3xl first-letter:text-[#a1c568] text-white font-bold w-full pb-[30px] after:h-[1px] after:bg-[radial-gradient(ellipse_at_left,rgba(197,202,213,.15)_0%,rgba(255,255,255,0)_70%)] after:w-full after:absolute after:bottom-0 md:after:left-0 after:-left-[26px] relative;
+}
+
+.boder {
+  @apply after:h-[1px] after:bg-[radial-gradient(ellipse_at_left,rgba(197,202,213,.15)_0%,rgba(255,255,255,0)_70%)] after:w-full after:absolute after:bottom-0 after:left-0 relative;
 }

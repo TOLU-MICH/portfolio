@@ -39,7 +39,7 @@ const SideBar = () => {
   });
 
   return (
-    <section className=" fixed md:relative top-0 left-0 z-40  md:block w-full md:w-[20%] ">
+    <section className=" fixed md:relative top-0 left-0 z-40  md:block w-full md:w-[30%] ">
       <div className="bg-black p-4 md:hidden flex justify-between">
         <img src={logo} alt="" className="rounded-full w-10  md:inline-block" />
         <button
