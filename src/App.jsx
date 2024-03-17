@@ -10,6 +10,9 @@ import img1 from "./assets/arrow.svg";
 import img2 from "./assets/clipboard.svg";
 import logo from "./assets/OIG2.jpeg";
 import About from "./component/About";
+import Service from "./component/Service";
+import Skills from "./component/Skills";
+import Pricing from "./component/Pricing";
 
 const data = [
   "Head of the product Design & Ux",
@@ -35,7 +38,7 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <section className="w-full h-auto relative flex justify-center items-center">
+    <section className="w-full h-auto relative flex justify-center items-center text-gray-400 ">
       <div className="w-full h-screen overflow-hidden z-0 absolute inset-0 bg-[#282828]">
         <svg
           class="ocean-dark hidden md:inline-block"
@@ -247,8 +250,11 @@ function App() {
 
       <section className="md:m-[8vh_6vw] max-w-[1268px] max-h-[674px] h-[84vh] w-full flex transition-all duration-300 ease-in-out">
         {/* <SideBar /> */}
-        <div className="h-full w-full flex  justify-between z-40">
+        <div className="h-full w-full flex flex-col z-40 md:max-w-[70%] overflow-y-scroll p-[30px]">
           <About />
+          <Service />
+          <Skills />
+          <Pricing />
         </div>
       </section>
     </section>

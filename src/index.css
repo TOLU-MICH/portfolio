@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: "Sora", sans-serif;
+}
+
 .bg {
   background-image: url("./assets//images/bg.svg");
   width: 100%;
@@ -15,4 +19,12 @@ h2 {
 
 .boder {
   @apply after:h-[1px] after:bg-[radial-gradient(ellipse_at_left,rgba(197,202,213,.15)_0%,rgba(255,255,255,0)_70%)] after:w-full after:absolute after:bottom-0 after:left-0 relative;
+}
+
+.boder-l {
+  @apply relative before:hidden before:md:block before:absolute before:top-0 before:-left-[1px] before:w-[1px] before:h-full before:bg-[radial-gradient(ellipse_at_top,rgba(197,202,213,.15)_0%,rgba(255,255,255,0)_90%)];
+}
+
+.l {
+  text-transform: uppercase;
 }
