@@ -65,7 +65,7 @@ const Visuals = () => {
                   ></path>{" "}
                 </svg>
               </div>
-              <div className="mt-[87%] md:mt-[113%] text-xl mb-[10px] font-bold text-[#a1c568] z-[300] bg-[#202020] w-full clip">
+              <div className="mt-[107%] sm:mt-[78%] lg:mt-[125%] xl:mt-[113%] text-xl mb-[10px] font-bold text-[#a1c568] z-[300] bg-[#202020] w-full clip">
                 <div class="w-max mx-auto pt-4">
                   Roman Skolkin
                   <h3 class="text-sm animate-typing overflow-hidden whitespace-nowrap border-r-4 border-r-white pr-5 text-[#a1c568] font-bold">
