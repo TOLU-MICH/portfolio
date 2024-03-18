@@ -17,8 +17,8 @@ const bio = [
 
 const About = () => {
   return (
-    <Container title={"About me"}>
-      <div className="flex flex-wrap">
+    <Container title={"Who's Roman?"}>
+      <div className="flex flex-wrap" id="#About">
         <div className=" md:p-[30px] md:max-w-[49.998%] w-full pt-[30px] text-base">
           <strong>Hello! I’m Tyrone Ryan.</strong> Designer & Photographer from
           USA, California. I have rich experience in web site design and

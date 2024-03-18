@@ -13,6 +13,14 @@ import About from "./component/About";
 import Service from "./component/Service";
 import Skills from "./component/Skills";
 import Pricing from "./component/Pricing";
+import Who from "./component/Who";
+import Quote from "./component/Quote";
+import Work from "./component/Work";
+import Hire from "./component/Hire";
+import Contact from "./component/Contact";
+import Visuals from "./component/Visuals";
+import Header from "./component/Header";
+import Container from "./component/Container";
 
 const data = [
   "Head of the product Design & Ux",
@@ -38,10 +46,10 @@ function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <section className="w-full h-auto relative flex justify-center items-center text-gray-400 ">
-      <div className="w-full h-screen overflow-hidden z-0 absolute inset-0 bg-[#282828]">
+    <section className="h-[68vh] w-full md:h-auto flex-wrap flex justify-center items-center text-gray-400 ">
+      <div className=" w-full md:h-full overflow-hidden z-0 absolute inset-0 bg-[#282828]">
         <svg
-          class="ocean-dark hidden md:inline-block"
+          class="hidden md:block inset-0 absolute"
           viewBox="0 0 2000 1125"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -248,13 +256,25 @@ function App() {
         </svg>
       </div>
 
-      <section className="md:m-[8vh_6vw] max-w-[1268px] max-h-[674px] h-[84vh] w-full flex transition-all duration-300 ease-in-out">
+      <section className="bg-[#282828] lg:relative md:m-[8vh_6vw] lg:max-w-[90%] xl:max-w-[1268px] max-h-[674px] h-full md:h-[85vh] w-full md:flex transition-all duration-300 ease-in-out">
         {/* <SideBar /> */}
-        <div className="h-full w-full flex flex-col z-40 md:max-w-[70%] overflow-y-scroll p-[30px]">
-          <About />
-          <Service />
-          <Skills />
-          <Pricing />
+        <Header />
+        <Visuals />
+
+        <div className="  w-full flex flex-col z-40 lg:max-w-[62%] md:overflow-y-scroll p-[30px] bg-[#282828]">
+          <Who />
+          <Quote />
+          <Work />
+          <Container title={"Contact me"}>
+            <div className="xl:flex flex-wrap">
+              <div className="xl:w-[49.998%] py-[30px] md:p-[30px]">
+                <Hire />
+              </div>
+              <div className="xl:w-[49.998%] boder-l py-[30px] md:p-[30px]">
+                <Contact />
+              </div>
+            </div>
+          </Container>
         </div>
       </section>
     </section>
